@@ -1,0 +1,22 @@
+-- Obfuscation --
+
+
+To use this, open a new Roblox Studio window.
+
+Insert a script into the enviroment.
+
+Paste in the code from the Obfuscator file.
+
+Change StringHere in the variable toByte to your string to obfuscate.
+
+PlayTest the game.
+
+From the view tab, select server.
+
+You should see a StringValue named byteValue.
+
+The value of that StringValue should be the obfuscated string.
+
+
+-- Execution / Running the Obfuscated script --
+Currently not working since loadstrings are disabled in the RStudio script editor :(
