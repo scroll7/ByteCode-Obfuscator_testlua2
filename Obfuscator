@@ -12,7 +12,7 @@ end
 
 function compile()
 	for i,v in pairs(bytes) do
-		stringValue = "\\"..stringValue..v
+		stringValue = stringValue..v.."\\"
 	end
 end
 
