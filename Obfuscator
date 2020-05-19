@@ -1,8 +1,10 @@
 local toByte = [[StringHere]]
 local bytes = {}
+
 local stringValue = Instance.new('StringValue', game)
 stringValue.Name = 'byteValue'
 stringValue.Value = "\\"
+
 function run()
 	for i = 0,toByte:len() do
 		local byteForm = toByte:byte(i)
