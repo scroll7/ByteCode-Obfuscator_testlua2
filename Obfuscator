@@ -4,7 +4,7 @@ local bytes = {}
 local stringValue = ""
 
 function run()
-	for i = 0,toByte:len() do
+	for i = 0,#toByte do
 		local byteForm = toByte:byte(i)
 		table.insert(bytes, byteForm)
 	end
@@ -12,9 +12,11 @@ end
 
 function compile()
 	for i,v in pairs(bytes) do
-		stringValue.Value = "\\"..stringValue.Value..v
+		stringValue = "\\"..stringValue..v
 	end
 end
 
-spawn(run)
-spawn(compile)
+run()
+compile()
+
+print(stringValue)
